@@ -1,0 +1,210 @@
+int a_pto3=3, b_pto2=2, c_pto4=4, d_pto6=6;
+int e_pto8=8, f_pto10=10, g_pto12=12;
+
+void setup() {
+  // put your setup code here, to run once:
+
+  Serial.begin(9600);
+  pinMode(a_pto3,OUTPUT);
+  pinMode(b_pto2,OUTPUT);
+  pinMode(c_pto4,OUTPUT);
+  pinMode(d_pto6,OUTPUT);
+  pinMode(e_pto8,OUTPUT);
+  pinMode(f_pto10,OUTPUT);
+  pinMode(g_pto12,OUTPUT);
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+
+  //Número 0
+  digitalWrite(a_pto3,HIGH);
+  digitalWrite(b_pto2,HIGH);
+  digitalWrite(c_pto4,HIGH);
+  digitalWrite(d_pto6,HIGH);
+  digitalWrite(e_pto8,HIGH);
+  digitalWrite(f_pto10,HIGH);
+  digitalWrite(g_pto12,LOW);
+  delay(800);
+
+  //Número 1
+  digitalWrite(a_pto3,LOW);
+  digitalWrite(b_pto2,HIGH);
+  digitalWrite(c_pto4,HIGH);
+  digitalWrite(d_pto6,LOW);
+  digitalWrite(e_pto8,LOW);
+  digitalWrite(f_pto10,LOW);
+  digitalWrite(g_pto12,LOW);
+  delay(800);
+
+  //Número 2
+  digitalWrite(a_pto3,HIGH);
+  digitalWrite(b_pto2,HIGH);
+  digitalWrite(c_pto4,LOW);
+  digitalWrite(d_pto6,HIGH);
+  digitalWrite(e_pto8,HIGH);
+  digitalWrite(f_pto10,LOW);
+  digitalWrite(g_pto12,HIGH);
+  delay(800);
+
+  //Número3
+  digitalWrite(a_pto3,HIGH);
+  digitalWrite(b_pto2,HIGH);
+  digitalWrite(c_pto4,HIGH);
+  digitalWrite(d_pto6,HIGH);
+  digitalWrite(e_pto8,LOW);
+  digitalWrite(f_pto10,LOW);
+  digitalWrite(g_pto12,HIGH);  
+  delay(800);
+
+//Número4
+  digitalWrite(a_pto3,LOW);
+  digitalWrite(b_pto2,HIGH);
+  digitalWrite(c_pto4,HIGH);
+  digitalWrite(d_pto6,LOW);
+  digitalWrite(e_pto8,LOW);
+  digitalWrite(f_pto10,HIGH);
+  digitalWrite(g_pto12,HIGH);  
+  delay(800);
+
+//Número5
+  digitalWrite(a_pto3,HIGH);
+  digitalWrite(b_pto2,LOW);
+  digitalWrite(c_pto4,HIGH);
+  digitalWrite(d_pto6,HIGH);
+  digitalWrite(e_pto8,LOW);
+  digitalWrite(f_pto10,HIGH);
+  digitalWrite(g_pto12,HIGH);  
+  delay(800);
+
+//Número6
+  digitalWrite(a_pto3,HIGH);
+  digitalWrite(b_pto2,LOW);
+  digitalWrite(c_pto4,HIGH);
+  digitalWrite(d_pto6,HIGH);
+  digitalWrite(e_pto8,HIGH);
+  digitalWrite(f_pto10,HIGH);
+  digitalWrite(g_pto12,HIGH);  
+  delay(800);
+
+//Número7
+  digitalWrite(a_pto3,HIGH);
+  digitalWrite(b_pto2,HIGH);
+  digitalWrite(c_pto4,HIGH);
+  digitalWrite(d_pto6,LOW);
+  digitalWrite(e_pto8,LOW);
+  digitalWrite(f_pto10,LOW);
+  digitalWrite(g_pto12,LOW);  
+  delay(800);
+
+//Número8
+  digitalWrite(a_pto3,HIGH);
+  digitalWrite(b_pto2,HIGH);
+  digitalWrite(c_pto4,HIGH);
+  digitalWrite(d_pto6,HIGH);
+  digitalWrite(e_pto8,HIGH);
+  digitalWrite(f_pto10,HIGH);
+  digitalWrite(g_pto12,HIGH);  
+  delay(800);
+
+//Número9
+  digitalWrite(a_pto3,HIGH);
+  digitalWrite(b_pto2,HIGH);
+  digitalWrite(c_pto4,HIGH);
+  digitalWrite(d_pto6,HIGH);
+  digitalWrite(e_pto8,LOW);
+  digitalWrite(f_pto10,HIGH);
+  digitalWrite(g_pto12,HIGH);  
+  delay(800);
+
+  //Número8
+  digitalWrite(a_pto3,HIGH);
+  digitalWrite(b_pto2,HIGH);
+  digitalWrite(c_pto4,HIGH);
+  digitalWrite(d_pto6,HIGH);
+  digitalWrite(e_pto8,HIGH);
+  digitalWrite(f_pto10,HIGH);
+  digitalWrite(g_pto12,HIGH);  
+  delay(800);
+
+  //Número7
+  digitalWrite(a_pto3,HIGH);
+  digitalWrite(b_pto2,HIGH);
+  digitalWrite(c_pto4,HIGH);
+  digitalWrite(d_pto6,LOW);
+  digitalWrite(e_pto8,LOW);
+  digitalWrite(f_pto10,LOW);
+  digitalWrite(g_pto12,LOW);  
+  delay(800);
+
+  //Número6
+  digitalWrite(a_pto3,HIGH);
+  digitalWrite(b_pto2,LOW);
+  digitalWrite(c_pto4,HIGH);
+  digitalWrite(d_pto6,HIGH);
+  digitalWrite(e_pto8,HIGH);
+  digitalWrite(f_pto10,HIGH);
+  digitalWrite(g_pto12,HIGH);  
+  delay(800);
+
+  //Número5
+  digitalWrite(a_pto3,HIGH);
+  digitalWrite(b_pto2,LOW);
+  digitalWrite(c_pto4,HIGH);
+  digitalWrite(d_pto6,HIGH);
+  digitalWrite(e_pto8,LOW);
+  digitalWrite(f_pto10,HIGH);
+  digitalWrite(g_pto12,HIGH);  
+  delay(800);
+
+  //Número4
+  digitalWrite(a_pto3,LOW);
+  digitalWrite(b_pto2,HIGH);
+  digitalWrite(c_pto4,HIGH);
+  digitalWrite(d_pto6,LOW);
+  digitalWrite(e_pto8,LOW);
+  digitalWrite(f_pto10,HIGH);
+  digitalWrite(g_pto12,HIGH);  
+  delay(800);
+
+  //Número3
+  digitalWrite(a_pto3,HIGH);
+  digitalWrite(b_pto2,HIGH);
+  digitalWrite(c_pto4,HIGH);
+  digitalWrite(d_pto6,HIGH);
+  digitalWrite(e_pto8,LOW);
+  digitalWrite(f_pto10,LOW);
+  digitalWrite(g_pto12,HIGH);  
+  delay(800);
+
+  //Número 2
+  digitalWrite(a_pto3,HIGH);
+  digitalWrite(b_pto2,HIGH);
+  digitalWrite(c_pto4,LOW);
+  digitalWrite(d_pto6,HIGH);
+  digitalWrite(e_pto8,HIGH);
+  digitalWrite(f_pto10,LOW);
+  digitalWrite(g_pto12,HIGH);
+  delay(800);
+
+  //Número 1
+  digitalWrite(a_pto3,LOW);
+  digitalWrite(b_pto2,HIGH);
+  digitalWrite(c_pto4,HIGH);
+  digitalWrite(d_pto6,LOW);
+  digitalWrite(e_pto8,LOW);
+  digitalWrite(f_pto10,LOW);
+  digitalWrite(g_pto12,LOW);
+  delay(800);  
+  //Número 0
+  digitalWrite(a_pto3,HIGH);
+  digitalWrite(b_pto2,HIGH);
+  digitalWrite(c_pto4,HIGH);
+  digitalWrite(d_pto6,HIGH);
+  digitalWrite(e_pto8,HIGH);
+  digitalWrite(f_pto10,HIGH);
+  digitalWrite(g_pto12,LOW);
+  delay(800);
+
+  
+}
