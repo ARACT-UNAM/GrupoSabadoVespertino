@@ -1,0 +1,49 @@
+#include <DHT.h>
+
+const int ventilador_pto3=3;
+const int sensorDHT_ptoA2=A2;
+
+//Declaramos 2 variables tipo entero para almacenar los datos leidos del sensor
+int temperatura, humedad;
+
+//Le asignamos un nombre a nuestro objeto
+DHT dht (sensorDHT_ptoA2,DHT11);
+
+//Configuaraciòn inicial de la Tarjeta Arduino
+void setup(){
+  Serial.begin(9600); 
+  pinMode(ventilador_pto3,OUTPUT); 
+  dht.begin(); //Iniciamos nuestro sensor DHT11
+  }
+
+void loop(){
+      humedad= dht.readHumidity(); //Funcion incluida en la libreria. Permite leer la humedad.
+      temperatura= dht.readTemperature(); //Permite leer la temperatura.
+
+
+      //Se imprime en pantalla los datos leìdos.
+      Serial.print("Temperatura: ");
+      Serial.print(temperatura);
+      Serial.println(" ºC");
+      Serial.print("Humedad: ");
+      Serial.print(humedad);
+      Serial.print("%");
+      Serial.println(" ");
+      Serial.println(" ");
+
+      //Pausa de 1 Segundo para poder apreciar los datos.
+      delay(1000);
+
+      while (temperatura>=25){ //Condición para mantener el ambiente fresco.
+        Serial.println("Ventiladores Encendidos");
+        digitalWrite(ventilador_pto3,HIGH); //Encendemos el ventilador
+        temperatura= dht.readTemperature(); //Volvemos a leer la temperatura
+        Serial.print("Temperatura: ");
+        Serial.print(temperatura);
+        Serial.println(" °C");
+        delay(2000);
+        }
+
+        digitalWrite(ventilador_pto3,LOW);
+ 
+  } 
